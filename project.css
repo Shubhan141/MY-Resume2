@@ -1,0 +1,318 @@
+
+/* Now we want to set the default some property  */
+ 
+*{
+
+    margin:0px; /* default margin should be 0px*/
+    font-family: Arial, Helvetica, sans-serif;
+     box-sizing: border-box; box-sizing:
+      border-box; 
+       /* to ensure padding and border are included in the total width and height of the element. */
+      
+     
+}
+.navbar{
+     height: 55px;
+     background-color: #131921;
+     color: white;
+     /* inside the navbar multiple div having  to align in the left side  */
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     /* justify-content: space-between; */
+     
+}
+nav-address,.nav-logo{
+    width: 100px;
+    height: 50px;
+    
+}
+
+/* to add the amezon logo  */
+.logo{
+       width: 95px;
+       height: inherit;
+       margin-top: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./logoamezone.png);
+
+}
+
+ /* give a border to the all elements  */
+ .border{
+   border: 2p solid transparent;  /* same color will be on scrolling */
+ }
+.border:hover{
+    border:3px solid white;
+ }
+
+ /* box 2*/
+ .icondiv{
+    display: flex;
+    align-items: center; /* location logo and paragraph will come in center */
+ }
+ .address-first{
+    color: #cccccc;
+    font-size: 0.8rem;
+    margin-left: 12px; /* deliver thoda sa aage se khisk raha hai */ 
+ }
+ .addres-secont{
+    font-size: 1rem; 
+    /* location and indian para gie margin  */
+    margin-left: 3px;
+ }
+
+ /* 3rd box */
+ /* third box having first select, searching and magnyfing glass.  */
+ .nav-search{
+    display: flex;
+   border-radius: 4px;
+    width: 600px;
+    height: 50px;
+    /* background-color: green; */
+    align-items: center;
+ }
+
+ 
+ .search-select{
+    background-color: #E6E6E6;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    width: 60px;
+    height: 38px;
+    font-size: 1rem;
+    text-align: center;
+ }
+ .search-input{
+    width: 100%; /* rest area will occupied*/ 
+    height: 38px;
+    padding: 7px 10px 10px 0px;
+    font-size: 1rem;
+    margin-left: -1px;
+
+ }
+ .search-icon{
+    background-color: #FEBD69;
+    width: 45px;
+    height: 38px;
+    margin-left:-1px ;
+    /* give radious from the right top and right bottom  */
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px ;
+        /* search icone is not in center make its parent flex and give center main and cross axis  */
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* increase the searh icon  */
+    font-size: 1.5rem;
+
+    /* to be center search icon  */
+    /* .incenter{
+        margin-top: 12px;
+        margin-left: 12px;
+     }  */
+
+ }
+ 
+ 
+
+ /* box five  */
+
+ .national-flag{
+
+     width: 50px;
+     height: 50px;
+    background-size: contain;
+    background-image: url(./logoamezone.png);
+    background-repeat: no-repeat;
+ }
+
+ /* box siz account and list same as the return and Ordres */
+ .nav-sign{
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: cente;
+
+ }
+ .hello-class{
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    font-weight: 400;
+ }
+ .acc-list{
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+ }
+
+ /**  last box cart icon**/ 
+ .cart-size{
+ font-size: 38px;
+ }
+
+ /** second nav bar  **/
+
+ .second-navbar {
+    
+    background-color:#232F3E;
+    height: 40px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+
+ }
+.menu-icon{
+ /* padding-top: 10px;  */
+}
+.menu-list{
+    display: flex;
+    width: 65%;
+  
+}
+.menu-list p{
+    margin: 0px 5px;
+}
+.menu-shopdeals{
+    font-size: 1rem;
+    font-weight: 700px;
+}
+
+/**  Let's move the here section **/
+.container-div{
+    display: flex;
+}
+.Hero-section{
+    width: 100%;
+    height: 45vh;
+
+    background-image: url("./nav-bar-imgimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-msg{
+    background-color: white;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    position: absolute;
+    top:55vh;
+    left:23%;
+}
+.hero-msg a{
+   color: #007185;
+
+}
+
+/**  shoping section**/
+.shop-section{
+    width: 100vw;
+       height: auto;
+    margin-top: 10px;
+    /* background-color: #fffff; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #E3E6E6;
+   margin-bottom:5px;
+}
+.shop-section> div{
+   width: 23%;
+   height: 400px;
+   background-color: rgb(255, 255, 255);
+   /* border: 2px solid black; */
+   color: #0f1110;
+   margin-bottom: 15px;
+
+}
+
+/**  we have to set layout for box1**/
+.box-content{
+    margin: 5px;
+}
+
+.box1-img{
+ width: 100%;
+ height:90%;
+}
+
+.shop-section a{
+ color: #84D2FF;
+}
+
+/**  footer section of the webpage **/
+.footer-section{
+    width: 100vw;
+    height: auto; /*  as will be required */
+    background-color:#37475A  ;
+}
+.pannel-one{ 
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* links section  */
+.pannel-2{
+    padding: 30px 0px;
+    background-color: #232F3E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    /* align-items: center; */
+
+}
+.list-heading{
+    color: white;
+    margin: 6px 0px 14px;
+    font-size: 16px;
+}
+.list{
+    list-style: none;
+    padding-left: 0px;
+}
+.list a{
+   
+    color: #DDCAB4;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/**  pannel3**/
+.pannel3{
+    border-top: 2px solid rgb(253, 252, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.amezone-logo2{
+ 
+    width: 95px;
+    height:50px;
+    margin-top: 8px;
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-image: url(./logoamezone.png);
+ border-radius: 5px;
+
+}
+
+
+
+
+
